@@ -1,0 +1,214 @@
+
+
+nav{
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  opacity: 0.6;
+  background-color: black !important;
+  text-align: center;
+  height: 30px !important;
+  overflow: hidden;
+}
+
+nav ul{
+  display: inline-block;
+}
+
+nav ul li a:hover{
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+   background-image: url("/images/header.jpg");
+   background-size: cover;
+   text-align: center;
+}
+
+.logo{
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  margin-top: 30vh;
+  text-align: center;
+  z-index: 9999;
+  color:  #64b5f6;
+  vertical-align: center;
+}
+
+
+header h1{
+  margin-bottom: 20px;
+  font-size: 250px;
+  opacity: 0;
+  color: #090E35;
+}
+.logo p{
+  font-size: 45px;
+  margin-right: 30px;
+  opacity: 0;
+  float: right;
+  color: #AFD3EC;
+  width: 45%;
+  /*font-family: 'Arima Madurai', cursive;*/
+}
+
+.cover{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.visible{
+  opacity: 1 !important;
+  transition: 2s;
+  transition-delay: 0.5s;
+}
+
+.OurSkills{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding-top: 10vh;
+}
+
+.info{
+  display: inline-block;
+  width: 70%;
+  height: 10vh;
+  background-color: aqua;
+  margin: 30px 0;
+  
+}
+
+.info p{
+  display: inline-block;
+  float: right;
+  position: relative;
+  margin-right: 20px;
+}
+
+.openedNav{
+  height: 100vh !important;
+  transition: 1s;
+  opacity: 1;
+}
+
+.closedNav{
+  height: 30px !important;
+  transition: 1s;
+}
+
+.noDisplay{
+  display: none;
+}
+
+.Display{
+  display: inline-block;
+}
+
+nav .navbuttonTop{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 29px;
+  opacity: 0.6;
+  border: none;
+  background-color: black;
+  text-align: center;
+}
+
+nav .navbuttonBot{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 29px;
+  opacity: 0.6;
+  border: none;
+  background-color: black;
+}
+
+.row{
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 2px;
+  background-color: white;
+  opacity: 1 !important;
+}
+
+nav .navbuttonTop:hover .row{
+  background-color: aqua;
+  transition: 1s;
+}
+
+.navbuttonbot .row{
+  width: 250px;
+}
+
+nav .navbuttonBot .row{
+  background-color: aqua;
+  width: 500px;
+}
+
+.string{
+  width: 77% !important;
+  transition: 1.5s;
+}
+
+.empty{
+  color: #AFD3EC;
+  display: inline-block;
+  position: relative;
+  float: right;
+  height: 2px;
+  margin: 0 30px;
+  background-color: white;
+  width: 0px;
+}
+
+.innovate{
+  text-align: left;
+  float: right;
+  margin-right: 30px;
+  width: 0px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.innovateWide{
+  width: 1900px;
+  transition: 1s;
+}
+
+.aqua{
+  display: inline-block !important;
+  width: 90%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  transition: 2s;
+}
+
+.displayMenu{
+  background-color: aqua;
+  opacity: 1;
+  transition: 2s;
+
+}
+
+.red{
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}

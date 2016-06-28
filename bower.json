@@ -1,0 +1,25 @@
+{
+  "name": "valerchik",
+  "description": "azaza",
+  "main": "index.hml",
+  "authors": [
+    "eeee"
+  ],
+  "license": "MIT",
+  "homepage": "homepage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/libs"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "www"
+  ]
+}
