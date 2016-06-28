@@ -4,7 +4,56 @@
 <meta charset="UTF-8"> 
 <title>Document</title> 
 <!-- bower:css -->
-<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css" />
+<!-- build:css css/combined.min.css -->
+<link rel="stylesheet" href="css/main.css"> 
+<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css"> 
+<!-- endbuild -->
+<!-- endbowe -->
+
+<link rel="stylesheet" href="libs/Materialize/bin/materialize.css" />
+
+</head> 
+<body> 
+
+<body>
+    <nav>
+
+    <div id = "navMenu" class="aqua">
+        <div class="red"></div>
+    </div>
+        <!-- <ul>
+            <li><a>Главная</a></li>
+            <li><a>О нас</a></li>
+            <li><a>Как мы работаем</a></li>
+            <li><a>Почему мы?</a></li>
+            <li><a>Наши работы</a></li>
+        </ul> -->
+        <a href="#"><div id="down" onclick="SlideDown()" class="Display navbuttonTop" alt="">
+            <div class="row"></div><div class="row"></div>
+        </div></a>
+        <a href="#"><div id ="up" onclick="SlideUp()" class="noDisplay navbuttonBot">
+            <div class="row"></div><div class="row"></div>
+        </div></a>
+    </nav>
+
+    <div class="main">
+        <header>
+        <div class="logo">
+        <h1 id="1">INSPIRE</h1>
+        <div id="StringAppear" class="empty"></div>
+        <br><br>
+        <div class="innovate" id="10"><p class="p">Innovating the present... Ignites the future.</p></div>
+        </div>
+            <img class = "cover" src="img/header.jpg" alt="">
+        </header>
+
+    
+
+<!-- build:js scripts/vender.min.js -->
+<!-- bower:js -->
+<script src="libs/jquery/dist/jquery.js"></script> 
+<script src="libs/bootstrap/dist/js/bootstrap.js"></script> 
+<script src="libs/angular/angular.min.js"></script> 
 <!-- endbower -->
 <script src="js/main.js"></script> 
 </body> 
