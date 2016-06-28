@@ -1,4 +1,5 @@
 $(document).ready(function (){
+	new WOW().init();
 	 setTimeout('$( "h1" ).addClass( "visible" )', 500);
 	 setTimeout('$( "p" ).addClass( "visible" )', 0);
 	 // $( "#StringAppear" ).addClass( "string" );
@@ -26,3 +27,29 @@ function SlideUp(){
 	$('#down').addClass('Display');
 	$( "#navMenu" ).removeClass( "displayMenu" );
 }
+
+// My code
+
+
+// window.onscroll = function() {
+// 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+// 	switch(scrolled){
+// 		case "100": {
+// 			$('.logo').addClass('hide');
+			
+// 		}
+// 	}
+// }
+
+$(window).scroll(function() {
+	var top_scroll = $(this).scrollTop();
+
+	if(top_scroll > 99) {
+		$('.logo').addClass('hide');
+		$('.info1').css('top', '10vh');
+	}
+	else if (top_scroll > 199){
+
+	}
+});
