@@ -1,5 +1,4 @@
 $(document).ready(function (){
-	new WOW().init();
 	 setTimeout('$( "h1" ).addClass( "visible" )', 500);
 	 setTimeout('$( "p" ).addClass( "visible" )', 0);
 	 // $( "#StringAppear" ).addClass( "string" );

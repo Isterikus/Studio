@@ -1,16 +1,20 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head>
-	<meta charset="UTF-8"> 
-	<title>Document</title> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Document</title>
+
 	<!-- bower:css -->
 	<!-- build:css css/combined.min.css -->
-	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="libs/Materialize/bin/materialize.css" />
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/animate.css/animate.min.css"> 
 	<!-- endbuild -->
 	<!-- endbowe -->
-	<link rel="stylesheet" href="libs/Materialize/bin/materialize.css" />
+	<link rel="stylesheet" href="css/main.css">
+<!-- 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"> -->
 </head>
 
 <body>
@@ -52,15 +56,21 @@
            	<img class = "cover" src="img/header.jpg" alt="">
        	</header>
     </div>
-
+	
 	<div class="section2">
-		<div class="info info1 wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et corrupti, modi quod adipisci architecto laudantium?</div>
-		<div class="info info2	wow fadeInDown" data-wow-offset="100vh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, assumenda, ut. Laboriosam, laborum vel nulla.</div>
-		<div class="info info3 wow fadeInDown" data-wow-offset="100vh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aspernatur sed, quisquam porro in excepturi.</div>
-		<div class="info info4 wow fadeInDown" data-wow-offset="100vh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione iste, tempora debitis qui. Est, et.</div>
-		<div class="info info5 wow fadeInDown" data-wow-offset="100vh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias explicabo.</div>
-	</div>
-
+		<div class="staging staging-2">
+        	<div class="to-fix">
+                <div class="stage">
+                    <div class="scene scene-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et corrupti, modi quod adipisci architecto laudantium?</div>
+					<div class="scene scene-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, assumenda, ut. Laboriosam, laborum vel nulla.</div>
+					<div class="scene scene-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aspernatur sed, quisquam porro in excepturi.</div>
+					<div class="scene scene-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione iste, tempora debitis qui. Est, et.</div>
+					<div class="scene scene-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias explicabo.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
 	<!-- build:js scripts/vender.min.js -->
 	<!-- bower:js -->
 	<script src="libs/jquery/dist/jquery.js"></script> 
@@ -68,6 +78,156 @@
 	<script src="libs/angular/angular.min.js"></script>
 	<script src="libs/wow/dist/wow.min.js"></script>
 	<!-- endbower -->
-	<script src="js/main.js"></script> 
+	<script src="js/main.js"></script>
+	<script src="js/scroll_section2.js"></script>
+	<script src="js/jquery.scroolly.min.js"></script>
+<!-- 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+		(function($){
+			$(window).load(function(){
+ 
+			$("body").mCustomScrollbar({
+			theme:"dark-thin"
+			});
+			});
+		})(jQuery);
+	</script> -->
+
+	<script>
+		$('.to-fix').scroolly([
+    {
+        alias: 'before',
+        from: '',
+        to: 'con-top = top',
+        css: {
+            position: 'static'
+        }
+    },
+    {
+        alias: 'fixing',
+        from: 'con-top = top',
+        to: 'con-bottom 80con = bottom',
+        css: {
+            position: 'fixed',
+            top: '',
+            bottom: '0'
+        }
+//onScroll: function($el, offset, length)
+    },
+    {
+        alias: 'unfixing',
+        from: 'con-bottom 80con = bottom',
+        to: 'doc-bottom',
+        css: {
+            position: 'absolute',
+            top: '',
+            bottom: '0'
+                                
+        }
+    }
+], $('.staging'));
+
+
+$('.staging-2 .scene-1').scroolly([
+                {
+                    alias: 'before',
+                    from: '',
+                    to: 'con-top = top',
+                    css: {
+                        top: '-20vh'
+                        opacity: '0'
+                    }
+                },
+                {
+                    alias: 'after',
+                    from: 'con-top = top',
+                    to: 'con-bottom 80con = bottom',
+                    css: {
+                        top: '0'
+                        opacity: '1'
+                    }
+                }
+            ], $('.staging-2'));
+            $('.staging-2 .scene-2').scroolly([
+                {
+                    alias: 'before',
+                    from: '',
+                    to: 'con-top 20con = top',
+                    css: {
+                        top: '0'
+                        opacity: '0'
+                    }
+                },
+                {
+                    alias: 'after',
+                    from: 'con-top 20con = top',
+                    to: 'con-bottom 80con = bottom',
+                    css: {
+                        top: '20vh'
+                        opacity: '1'
+                    }
+                }
+            ], $('.staging-2'));
+            $('.staging-2 .scene-3').scroolly([
+                {
+                    alias: 'before',
+                    from: '',
+                    to: 'con-top 40con = top',
+                    css: {
+                        top: '20vh'
+                        opacity: '0'
+                    }
+                },
+                {
+                    alias: 'after',
+                    from: 'con-top 40con = top',
+                    to: 'con-bottom 80con = bottom',
+                    css: {
+                        top: '40vh'
+                        opacity: '1'
+                    }
+                }
+            ], $('.staging-2'));
+            $('.staging-2 .scene-4').scroolly([
+                {
+                    alias: 'before',
+                    from: '',
+                    to: 'con-top 60con = top',
+                    css: {
+                        top: '40vh'
+                        opacity: '0'
+                    }
+                },
+                {
+                    alias: 'after',
+                    from: 'con-top 60con = top',
+                    to: 'con-bottom 80con = bottom',
+                    css: {
+                        top: '60vh'
+                        opacity: '1'
+                    }
+                }
+            ], $('.staging-2'));
+            $('.staging-2 .scene-5').scroolly([
+                {
+                    alias: 'before',
+                    from: '',
+                    to: 'con-top 80con = top',
+                    css: {
+                        top: '60vh'
+                        opacity: '0'
+                    }
+                },
+                {
+                    alias: 'after',
+                    from: 'con-top 80con = top',
+                    to: 'con-bottom 80con = bottom',
+                    css: {
+                        top: '80vh'
+                        opacity: '1'
+                    }
+                }
+            ], $('.staging-2'));
+	</script>
 </body> 
 </html>   
