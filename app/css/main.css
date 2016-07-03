@@ -209,17 +209,16 @@ nav .navbuttonBot .row{
   background-color: aqua;
   opacity: 1;
   transition: 2s;
-
 }
 
 .red{
   width: 500px;
   height: 500px;
   background-color: red;
-
 }
 
 /*My code start*/
+/*SECTION2 STYLES*/
 .section1 {
     position: relative;
 }
@@ -229,8 +228,6 @@ nav .navbuttonBot .row{
 }
 
 .section2 {
-/*    opacity: 0;*/
-/*    z-index: 0;*/
     height: 100vh;
     width: 100%;
     margin-top: 100vh;
@@ -256,15 +253,13 @@ nav .navbuttonBot .row{
   overflow: hidden;
 }
 
-.staging .to-fix .stage .scene {
+.scene {
     position: absolute;
     width: 100%;
     height: 20vh;
-    background-color: green;
-    opacity: 0;
+    opacity: 1;
     z-index: 1;
     margin: 0;
-    transition: 1s;
 }
 
 #b1{
@@ -285,6 +280,49 @@ nav .navbuttonBot .row{
 
 #b5 {
   top: 80vh;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: green;
+    opacity: 1;
+    z-index: 100 !important;
+    margin: 0;
+    transition: 1s;
+}
+
+#con1{
+  top: -40vh;
+}
+
+#con2 {
+  top: -60vh;
+}
+
+#con3 {
+  top: -80vh;
+}
+
+#con4 {
+  top: -100vh;
+}
+
+#con5 {
+  top: -120vh;
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: red;
+    opacity: 0;
+    z-index: 100;
+    margin: 0;
+    transition: 1s;
+/*    transform: rotateX(180deg);*/
 }
 
 .triggers {
@@ -312,4 +350,45 @@ nav .navbuttonBot .row{
 
 .trigger5{
   top: 60vh;
+}
+
+.rotate {
+  transition: 1s;
+  transform: rotateX(180deg);
+  height: 20vh;
+  opacity: 0;
+  font-size: 0px;
+}
+
+.rotate2 {
+  transform: rotateX(-180deg);
+  font-size: 14px;
+  opacity: 1;
+}
+
+.rotate3 {
+  transform: rotateX(-180deg);
+  opacity: 1;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*TRANSITION TO SECTION 3*/
+
+.section3 {
+  height: 150vh;
+  width: 100%;
+  margin-top: 200px;
+  background-color: black;
+  display: block;
+}
+
+.transition_to_sec3 {
+  display: inline-block;
+  top: 100vh;
+  background-color: black;
+  z-index: 100;
+  opacity: 1;
+  transform: rotateY(90deg);
 }

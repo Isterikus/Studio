@@ -1,9 +1,17 @@
 $(document).ready(function (){
-	 setTimeout('$( "h1" ).addClass( "visible" )', 500);
-	 setTimeout('$( "p" ).addClass( "visible" )', 0);
-	 // $( "#StringAppear" ).addClass( "string" );
-	  setTimeout('$( "#StringAppear" ).addClass( "string" );', 2500);
-	  setTimeout('$( "#10" ).addClass( "innovateWide" );', 2500);
+	var he = window.innerHeight;
+	var wi = window.innerWidth; 
+
+	setTimeout('$( "h1" ).addClass( "visible" )', 500);
+	setTimeout('$( "p" ).addClass( "visible" )', 0);
+	// $( "#StringAppear" ).addClass( "string" );
+	setTimeout('$( "#StringAppear" ).addClass( "string" );', 2500);
+	setTimeout('$( "#10" ).addClass( "innovateWide" );', 2500);
+
+	var bl_wi = Math.sqrt(Math.pow(he/2, 2) + Math.pow(wi/2, 2));
+	$('.transition_to_sec3').css('width', bl_wi);
+	var bl_he = Math.sqrt(Math.pow(he, 2) + Math.pow(wi, 2));
+	$('.transition_to_sec3').css('height', bl_he);
 });
 
 function SlideDown(){
@@ -14,7 +22,6 @@ function SlideDown(){
 	$('nav').addClass('openedNav');
 	$('nav').removeClass('closedNav');
 	setTimeout('$( "#navMenu" ).addClass( "displayMenu" )', 0);
-
 }
 
 function SlideUp(){
@@ -27,28 +34,3 @@ function SlideUp(){
 	$( "#navMenu" ).removeClass( "displayMenu" );
 }
 
-// My code
-
-
-// window.onscroll = function() {
-// 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-
-// 	switch(scrolled){
-// 		case "100": {
-// 			$('.logo').addClass('hide');
-			
-// 		}
-// 	}
-// }
-
-$(window).scroll(function() {
-	var top_scroll = $(this).scrollTop();
-
-	if(top_scroll > 99) {
-		$('.logo').addClass('hide');
-		$('.info1').css('top', '10vh');
-	}
-	else if (top_scroll > 199){
-
-	}
-});
