@@ -13,13 +13,13 @@ $(document).ready(function (){
 
 	transition_to_sec3.css({'width': wi / 2});
 	proj1.css({
-		'width': wi / 4,
-		'height': he / 2,
+		'width': wi / 3,
+		'height': he / 1.5,
 		'left': wi / 8
 	});
 	proj2.css({
-		'width': wi / 4,
-		'height': he / 2,
+		'width': wi / 3,
+		'height': he / 1.5,
 		'right': wi / 8
 	});
 
@@ -51,18 +51,18 @@ function SlideUp(){
 	$( "#navMenu" ).removeClass( "displayMenu" );
 }
 
-// $(window).scroll(function() {
-// 	var top_scroll = $(document).scrollTop();
+$(window).scroll(function() {
+	var top_scroll = $(document).scrollTop();
 
-// 	if (top_scroll < 2000){
-// 		$('header').removeClass('static');
-// 		$('header').addClass('fixed');
-// 	}
-// 	else {
-// 		$('header').removeClass('fixed');
-// 		$('header').addClass('static');
-// 	};
-// });
+	if (top_scroll < 1300){
+		$('header').removeClass('absolute');
+		$('header').addClass('fixed');
+	}
+	else {
+		$('header').removeClass('fixed');
+		$('header').addClass('absolute');
+	};
+});
 
 // window.onscroll = function() {
 // 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;

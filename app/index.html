@@ -13,6 +13,8 @@
 	<!-- endbuild -->
 	<!-- endbowe -->
 	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/social_animate.css">
+    <link rel="stylesheet" href="css/lines_prices.css">
 <!-- 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"> -->
 </head>
 
@@ -65,7 +67,7 @@
         </a>
         <div id ="up" onclick="SlideUp()" class="noDisplay navbuttonBot">
             <div class="row"></div>
-                <div class="row"></div>
+            <div class="row"></div>
         </div>
     </nav>
 
@@ -132,67 +134,124 @@
         </div>
     </div>
     
-    <div class="section3">
-        <div class="trigger_skew"></div>
-        <div class="transition_to_sec3 tran1" id="tr1"></div>
-        <div class="transition_to_sec3 tran2" id="tr2"></div>
+    <div class="section3" id="sec3">
+        <div class="trigger_show"></div>
+<!--         <div class="trigger_skew"></div> -->
+<!--         <div class="transition_to_sec3 tran1" id="tr1"></div>
+        <div class="transition_to_sec3 tran2" id="tr2"></div> -->
         <div class="our_projects">
-            <div class="projects project1"></div>
-            <div class="projects project2"></div>
+            <div class="projects project1" id="proj"></div>
+            <div class="projects project2" id="prog"></div>
         </div>
     </div>
 
     <div class="section4">
-    <div class="Prices" onclick="RemoveToggled()">
+        <div class="Prices" onclick="RemoveToggled()">
             <h3>Наши цены</h3>
-            <div class="InlineRight"></div>
+
+            <div class="InlineRight">
+                <!-- <div class="inline_right_big" id="tests"></div> -->
+       <!--          <div class="inline_right_small"></div> -->
+            </div>
+
             <div class="PackageNameLeft" id = "ServicePack1" onclick="TogglePack1()">СТОТЫЩБАКСОВ
                 <div class="PackageNameHover PackageNameHoverTop" id="NameHover1">МУЛЬЙОМБАКСОВ</div>
             </div>
-            <div class="InlineCenter"></div>
+
+            <div class="InlineCenter">
+      <!--           <div class="inline_center_big"></div> -->
+        <!--         <div class="inline_center_small"></div> -->
+            </div>
+
             <div class="PackageNameRight" id = "ServicePack2" onclick="TogglePack2()">СТОТЫЩБАКСОВ
-            <div class="PackageNameHover PackageNameHoverTop" id="NameHover2">МУЛЬЙОМБАКСОВ</div>
-        </div>
-        <div class="InlineLeft"></div>
-        <br>
-        <div class="InlineRight"></div>
-        <div class="PackageNameLeft" id = "ServicePack3" onclick="TogglePack3()">СТОТЫЩБАКСОВ
-            <div class="PackageNameHover PackageNameHoverTop" id="NameHover3">МУЛЬЙОМБАКСОВ</div>
-        </div>
+                <div class="PackageNameHover PackageNameHoverTop" id="NameHover2">МУЛЬЙОМБАКСОВ</div>
 
-        <div class="InlineCenter"></div>
+            </div>
+            <div class="InlineLeft">
+    <!--             <div class="inline_left_big"></div> -->
+      <!--           <div class="inline_left_small"></div> -->
+            </div>
 
-        <div class="PackageNameRight" id = "ServicePack4" onclick="TogglePack4()">СТОТЫЩБАКСОВ
-            <div class="PackageNameHover PackageNameHoverTop" id="NameHover4">МУЛЬЙОМБАКСОВ</div>
-        </div>
-        <div class="InlineLeft"></div>
-        <br>
-        <div class="InlineRight"></div>
-        <div class="PackageNameLeft" id = "ServicePack5" onclick="TogglePack5()">СТОТЫЩБАКСОВ
-            <div class="PackageNameHover PackageNameHoverBot" id="NameHover5">МУЛЬЙОМБАКСОВ</div>
-        </div>
-        <div class="InlineCenter"></div>
-        <div class="PackageNameRight" id = "ServicePack6" onclick="TogglePack6()">СТОТЫЩБАКСОВ
-            <div class="PackageNameHover PackageNameHoverBot" id="NameHover6">МУЛЬЙОМБАКСОВ</div>
-        </div>
-        <div class="InlineLeft"></div>
-        <br>
-        <div class="InlineRight"></div>
-        <div class="PackageNameLeft" id = "ServicePack7" onclick="TogglePack7()">СТОТЫЩБАКСОВ
+            <br>
+
+            <div class="InlineRight">
+     <!--            <div class="inline_right_big"></div> -->
+       <!--          <div class="inline_right_small"></div> -->
+            </div>
+
+            <div class="PackageNameLeft" id = "ServicePack3" onclick="TogglePack3()">СТОТЫЩБАКСОВ
+                <div class="PackageNameHover PackageNameHoverTop" id="NameHover3">МУЛЬЙОМБАКСОВ</div>
+            </div>
+
+            <div class="InlineCenter">
+      <!--           <div class="inline_center_big"></div> -->
+        <!--         <div class="inline_center_small"></div> -->
+            </div>
+
+            <div class="PackageNameRight" id = "ServicePack4" onclick="TogglePack4()">СТОТЫЩБАКСОВ
+                <div class="PackageNameHover PackageNameHoverTop" id="NameHover4">МУЛЬЙОМБАКСОВ</div>
+            </div>
+
+            <div class="InlineLeft">
+    <!--             <div class="inline_left_big"></div> -->
+      <!--           <div class="inline_left_small"></div> -->
+            </div>
+
+            <br>
+
+            <div class="InlineRight">
+     <!--            <div class="inline_right_big"></div> -->
+       <!--          <div class="inline_right_small"></div> -->
+            </div>
+
+            <div class="PackageNameLeft" id = "ServicePack5" onclick="TogglePack5()">СТОТЫЩБАКСОВ
+                <div class="PackageNameHover PackageNameHoverBot" id="NameHover5">МУЛЬЙОМБАКСОВ</div>
+            </div>
+
+            <div class="InlineCenter">
+      <!--           <div class="inline_center_big"></div> -->
+        <!--         <div class="inline_center_small"></div> -->
+            </div>
+
+            <div class="PackageNameRight" id = "ServicePack6" onclick="TogglePack6()">СТОТЫЩБАКСОВ
+                <div class="PackageNameHover PackageNameHoverBot" id="NameHover6">МУЛЬЙОМБАКСОВ</div>
+            </div>
+
+            <div class="InlineLeft">
+    <!--             <div class="inline_left_big"></div> -->
+      <!--           <div class="inline_left_small"></div> -->
+            </div>
+
+            <br>
+
+            <div class="InlineRight">
+     <!--            <div class="inline_right_big"></div> -->
+       <!--          <div class="inline_right_small"></div> -->
+            </div>
+
+            <div class="PackageNameLeft" id = "ServicePack7" onclick="TogglePack7()">СТОТЫЩБАКСОВ
                 <div class="PackageNameHover PackageNameHoverBot" id="NameHover7">МУЛЬЙОМБАКСОВ</div>
-        </div>
-        <div class="InlineCenter"></div>
-        <div class="PackageNameRight" id = "ServicePack8" onclick="TogglePack8()">
-            СТОТЫЩБАКСОВ
-            <div class="PackageNameHover PackageNameHoverBot" id="NameHover8">МУЛЬЙОМБАКСОВ</div>
-        </div>
-        <div class="InlineLeft"></div>
+            </div>
+
+            <div class="InlineCenter">
+      <!--           <div class="inline_center_big"></div> -->
+        <!--         <div class="inline_center_small"></div> -->
+            </div>
+
+            <div class="PackageNameRight" id = "ServicePack8" onclick="TogglePack8()">СТОТЫЩБАКСОВ
+                <div class="PackageNameHover PackageNameHoverBot" id="NameHover8">МУЛЬЙОМБАКСОВ</div>
+            </div>
+            <div class="InlineLeft">
+    <!--             <div class="inline_left_big"></div> -->
+      <!--           <div class="inline_left_small"></div> -->
+            </div>
+
         <br>
 <!--         <div class="test" id="123" onclick="test()">
             <div class="test2" id="999"></div>
         </div> -->
 
-    </div>
+        </div>
     </div>
 
 	<!-- build:js scripts/vender.min.js -->

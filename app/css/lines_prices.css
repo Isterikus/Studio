@@ -1,0 +1,20 @@
+svg {
+	position: absolute;
+	margin-top: 44px;
+	top: 0;
+	left: 0;
+}
+
+svg line {
+	stroke-width: 1;
+	stroke: #000;
+	fill: none;
+/*	stroke-dasharray: 0;*/
+/*	stroke-dashoffset: 500%;*/
+	-webkit-transition: -webkit-transform .6s ease-out;
+	transition: transform .6s ease-out;
+
+	stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 29%;
+}

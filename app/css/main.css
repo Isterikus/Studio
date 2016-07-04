@@ -254,16 +254,20 @@ hr{
 /*PRICES VALERA NEXVAT*/
 
 .Prices{
+  position: relative;
   height: 100vh;
   background-color: white;
   text-align: center;
+  z-index: 1000000;
 }
 
 .Prices h3{
   font-size: 40px;
+  margin: 0;
 }
 
 .InlineCenter{
+  position: relative;
   display: inline-block;
   height: 1px;
   background-color: black;
@@ -271,7 +275,28 @@ hr{
   margin: 10vh 0;
 }
 
+/*.inline_center_big {
+  position: absolute;
+  left: 20%;
+  top: 2vh;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  width: 60%;
+}
+
+.inline_center_small{
+  position: absolute;
+  left: 38%;
+  top: 4vh;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  width: 24%;
+}*/
+
 .InlineRight{
+  position: relative;
   position: absolute;
   left: 0;
   display: inline-block;
@@ -281,7 +306,28 @@ hr{
   margin: 10vh 0;
 }
 
+/*.inline_right_big {
+  position: absolute;
+  left: 20%;
+  top: 2vh;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  width: 60%;
+}
+
+.inline_right_small{
+  position: absolute;
+  left: 50%;
+  top: 4vh;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  width: 0;
+}*/
+
 .InlineLeft{
+  position: relative;
   position: absolute;
   right: 0;
   display: inline-block;
@@ -290,6 +336,26 @@ hr{
   width: 12%;
   margin: 10vh 0;
 }
+
+/*.inline_left_big {
+  position: absolute;
+  left: 20%;
+  top: 2vh;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  width: 60%;
+}
+
+.inline_left_small{
+  position: absolute;
+  left: 38%;
+  top: 4vh;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  width: 24%;
+}*/
 
 .PackageNameLeft{
   position: absolute;
@@ -350,6 +416,20 @@ hr{
   transition: 0.5s;
 }
 
+/*.PackageNameLeft:hover + InlineRight > #tests{
+  left: 20%;
+  width: 80% !important;
+  background-color: red;
+  transition: 1s;
+}*/
+
+/*.PackageNameLeft:hover .inline_right_small, 
+.inline_center_small{
+  left: 38%;
+  width: 24%;
+  transition: 1s;
+}*/
+
 .LongPackage12{
   height: 80vh;
   z-index: 9000;
@@ -406,13 +486,13 @@ hr{
   background-color: black;
 }
 
-.test{
+/*.test{
   position: absolute;
   bottom: 0;
   width: 500px;
   height: 100px;
   background-color: red;
-}
+}*/
 
 .test2{
   position: absolute;
@@ -471,8 +551,8 @@ hr{
   position: static;
 }
 
-.fixed {
-  position: fixed;
+.absolute {
+  position: absolute;
 }
 
 .scene {
@@ -545,7 +625,7 @@ hr{
   margin: 0;
   transition: 1s;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 /*    transform: rotateX(180deg);*/
 }
 
@@ -600,22 +680,29 @@ hr{
   transition: 1s;
   transform: rotateX(180deg);
   height: 20vh;
-  opacity: 1;
+  opacity: 0;
   font-size: 0px;
+  z-index: -1 !important;
 }
 
 .rotate2 {
   transform: rotateX(-180deg);
   font-size: 14px;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .rotate3 {
   transform: rotateX(-180deg);
-  opacity: 1;
+  opacity: 0;
+  z-index: -1 !important;
 /*  text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;*/
+}
+
+.tr_hide {
+  transition: 1s;
+  top: -120vh;
 }
 
 /*TRANSITION TO SECTION 3*/
@@ -627,18 +714,19 @@ hr{
   margin-top: 35vh;
   background-color: white;
   display: block;
-  z-index: 1 !important;
+  z-index: -1 !important;
+  opacity: 1;
 }
 
-.transition_to_sec3 {
+/*.transition_to_sec3 {
   position: absolute;
   height: 100vh;
-/*  top: -300px;*/
+  top: -300px;
   background-color: white;
   opacity: 1;
   background-size: cover;
-/*  transform: rotateY(-45deg);
-  -webkit-transform: rotate(-45deg);*/
+  transform: rotateY(-45deg);
+  -webkit-transform: rotate(-45deg);
   z-index: 2 !important;
 }
 
@@ -651,6 +739,10 @@ hr{
   background-image: url('../img/rotate2.png');
   top: 20vh;
   right: 0;
+}*/
+
+.show {
+  z-index: 10000 !important;
 }
 
 .skew {
@@ -661,26 +753,34 @@ hr{
   transition: 1s;
 }
 
-.trigger_skew {
+.trigger_show {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 10vh;
+}
+
+/*.trigger_skew {
   position: absolute;
   width: 100%;
   height: 1px;
   top: 20vh;
-}
+}*/
 
 .projects {
   position: absolute;
   top: 10vh;
-  opacity: 0;
+  opacity: 1;
   background-color: black;
 }
 
 .opacity {
   opacity: 1;
-  transition: 1s;
-  position: fixed;
+  z-index: 1;
+/*  transition: 1s;*/
 }
 
 /*.section4 {
-  background-color: w
+  background-color: white !important;
+  z-index: 100000 !important;
 }*/
