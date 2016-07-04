@@ -7,22 +7,45 @@
 
 	//Init Scroll Magic
 	var ctrl = new ScrollMagic.Controller({
-		// globalSceneOptions: {
-		// 	triggerHook: 'onLeave'
-		// }
+		globalSceneOptions: {
+			triggerHook: 'onLeave'
+		}
 	});
 
-	// var scene1 = new ScrollMagic.Scene({
-	// 	triggerElement: '.section3',
-	// 	duration: 100
-	// })
-	// .addIndicators({name: "1 - transition"})
-	// .setClassToggle("#b1", "rotate")
-	// .setClassToggle("#b2", "rotate")
-	// .setClassToggle("#b3", "rotate")
-	// .setClassToggle("#b4", "rotate")
-	// .setClassToggle("#b5", "rotate")
-	// .setClassToggle("#b2", "rotate")
-	// .addTo(ctrl);
+	var scene1 = new ScrollMagic.Scene({
+        triggerElement: '.trigger_skew',
+        duration: 700
+    })
+    .setClassToggle("#tr1", "skew")
+    .addIndicators({name: "2 - change skew"})
+    .addTo(ctrl);
+
+    var scene2 = new ScrollMagic.Scene({
+        triggerElement: '.trigger_skew',
+        duration: 700
+    })
+    .setClassToggle("#tr2", "skew")
+    .addTo(ctrl);
+
+    var scene3 = new ScrollMagic.Scene({
+        triggerElement: '.trigger_skew',
+        duration: 700
+    })
+    .setClassToggle(".projects", "opacity")
+    .addTo(ctrl);
+
+    // var scene4 = new ScrollMagic.Scene({
+    //     triggerElement: '.trigger_skew',
+    //     duration: 700
+    // })
+    // .setPin(".project1")
+    // .addTo(ctrl);
+
+    // var scene4 = new ScrollMagic.Scene({
+    //     triggerElement: '.trigger_skew',
+    //     duration: 700
+    // })
+    // .setPin(".project2")
+    // .addTo(ctrl);
 
 }) (jQuery);

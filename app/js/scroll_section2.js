@@ -26,9 +26,9 @@
         }
     });
     var ctrl2 = new ScrollMagic.Controller({
-        // globalSceneOptions: {
-        //  triggerHook: 'onLeave'
-        // }
+        globalSceneOptions: {
+         triggerHook: 'onLeave'
+        }
     });
     //HIDE LOGO
     var scene0 = new ScrollMagic.Scene({
@@ -41,35 +41,35 @@
     //POSITION FIXED/UNFIXED
     var scene1 = new ScrollMagic.Scene({
         triggerElement: '.trigger1',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .setPin('#b1')
     .addTo(ctrl);
 
     var scene2 = new ScrollMagic.Scene({
         triggerElement: '.trigger1',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .setPin('#b2')
     .addTo(ctrl);
 
     var scene3 = new ScrollMagic.Scene({
         triggerElement: '.trigger1',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .setPin('#b3')
     .addTo(ctrl);
 
     var scene4 = new ScrollMagic.Scene({
         triggerElement: '.trigger1',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .setPin('#b4')
     .addTo(ctrl);
 
     var scene5 = new ScrollMagic.Scene({
         triggerElement: '.trigger1',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .setPin('#b5')
     .addTo(ctrl);
@@ -78,26 +78,26 @@
 
     var scene111 = new ScrollMagic.Scene({
         triggerElement: '.trigger5',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .on("enter", function () {
         con1.style.top = "0vh";
-        con1.style.opacity = "0.6";
+        con1.style.opacity = "1";
     })
     .on("leave", function () {
         con1.style.top = "-40vh";
         con1.style.opacity = "0";
     })
-    .addIndicators({name: "1 - change inline style"})
+    // .addIndicators({name: "1 - change inline style"})
     .addTo(ctrl);
 
     var scene6 = new ScrollMagic.Scene({
         triggerElement: '.trigger4',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .on("enter", function () {
         con2.style.top = "0vh";
-        con2.style.opacity = "0.6";
+        con2.style.opacity = "1";
     })
     .on("leave", function () {
         con2.style.top = "-60vh";
@@ -107,11 +107,11 @@
 
     var scene7 = new ScrollMagic.Scene({
         triggerElement: '.trigger3',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .on("enter", function () {
         con3.style.top = "0vh";
-        con3.style.opacity = "0.6";
+        con3.style.opacity = "1";
     })
     .on("leave", function () {
         con3.style.top = "-80vh";
@@ -121,11 +121,11 @@
 
     var scene8 = new ScrollMagic.Scene({
         triggerElement: '.trigger2',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .on("enter", function () {
         con4.style.top = "0vh";
-        con4.style.opacity = "0.6";
+        con4.style.opacity = "1";
     })
     .on("leave", function () {
         con4.style.top = "-100vh";
@@ -135,11 +135,11 @@
 
     var scene9 = new ScrollMagic.Scene({
         triggerElement: '.trigger1',
-        duration: wh * 1.8
+        duration: wh * 2.4
     })
     .on("enter", function () {
         con5.style.top = "0vh";
-        con5.style.opacity = "0.6";
+        con5.style.opacity = "1";
     })
     .on("leave", function () {
         con5.style.top = "-120vh";
@@ -154,80 +154,80 @@
     //     duration: wh * 10
     // })
     // .on("enter", function() {
-    //     head.style.position = "relative"
+    //     head.style.position = "static"
     // })
     // .on("leave", function() {
     //     head.style.position = "fixed"
     // })
+    // .addIndicators({name: "2 - change IMAGE"})
     // .addTo(ctrl2);
 
     var scene11 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#con1", "rotate")
-    .addIndicators({name: "2 - change rotate"})
     .addTo(ctrl2);
 
     var scene22 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#con2", "rotate")
     .addTo(ctrl2);
 
     var scene33 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#con3", "rotate")
     .addTo(ctrl2);
 
     var scene44 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#con4", "rotate")
     .addTo(ctrl2);
 
     var scene55 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#con5", "rotate")
     .addTo(ctrl2);
 
     var scene66 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#in1", "rotate3")
     .addTo(ctrl2);
 
     var scene77 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#in2", "rotate3")
     .addTo(ctrl2);
 
     var scene88 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#in3", "rotate3")
     .addTo(ctrl2);
 
     var scene99 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#in4", "rotate3")
     .addTo(ctrl2);
 
     var scene100 = new ScrollMagic.Scene({
         triggerElement: '.section3',
-        duration: 100
+        duration: 150
     })
     .setClassToggle("#in5", "rotate3")
     .addTo(ctrl2);

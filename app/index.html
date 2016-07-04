@@ -22,43 +22,65 @@
     <div class="triggers trigger3"></div>
     <div class="triggers trigger4"></div>
     <div class="triggers trigger5"></div>
-	<nav>
-		<div id = "navMenu" class="aqua">
-			<div class="red"></div>
-   		</div>
-        <!-- <ul>
-            <li><a>Главная</a></li>
-            <li><a>О нас</a></li>
-            <li><a>Как мы работаем</a></li>
-            <li><a>Почему мы?</a></li>
-            <li><a>Наши работы</a></li>
-        </ul> -->
-       	<a href="#">
-   	    	<div id="down" onclick="SlideDown()" class="Display navbuttonTop">
-            	<div class="row"></div>
-           		<div class="row"></div>
-       		</div>
-       	</a>
-   	    <a href="#">
-        	<div id ="up" onclick="SlideUp()" class="noDisplay navbuttonBot">
-           		<div class="row"></div>
-           		<div class="row"></div>
-       		</div>
-   	    </a>
-   	</nav>
+
+    <nav>
+        <div id = "navMenu" class="aqua">
+            <a href="#">
+                <div class="navPoint noDisp">Главная
+                    <div class="navOverlay"></div>
+                </div>
+                <hr>
+            </a>
+            <a href="#">
+                <div class="navPoint noDisp">О нас
+                    <div class="navOverlay"></div>
+                </div>
+                <hr>
+            </a>
+            <a href="#blok1">
+                <div class="navPoint noDisp">Наши цены
+                    <div class="navOverlay"></div>
+                </div>
+                <hr>
+            </a>
+            <a href="#">
+                <div class="navPoint noDisp">Наши проекты
+                    <div class="navOverlay"></div>
+                </div>
+                <hr>
+            </a>
+            <a href="#">
+                <div class="navPoint noDisp">Контакты
+                    <div class="navOverlay"></div>
+                </div>
+                <hr>
+            </a>
+        </div>
+
+        <a>
+            <div id="down" onclick="SlideDown()" class="Display navbuttonTop" alt="">
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+        </a>
+        <div id ="up" onclick="SlideUp()" class="noDisplay navbuttonBot">
+            <div class="row"></div>
+                <div class="row"></div>
+        </div>
+    </nav>
 
     <div class="main">
-		<header id="head">
-       		<div class="logo" id="lg">
-       			<h1 id="1">INSPIRE</h1>
-   	    		<div id="StringAppear" class="empty"></div>
-	       		<br><br>
-       			<div class="innovate" id="10">
-       				<p class="p">Innovating the present... 	Ignites the future.</p>
-       			</div>
-        	</div>
-           	<img class = "cover" src="img/header.jpg" alt="">
-       	</header>
+        <header>
+            <div class="logo" id= "lg">
+                <h1 id="1">INSPIRE</h1>
+                <div id="StringAppear" class="empty"></div>
+                <br><br>
+                <div class="innovate" id="10">
+                    <p class="p">Innovating the present... Ignites the future.</p>
+                </div>
+            </div>
+            <img class = "cover" src="img/header.jpg" alt="">
+        </header>
     </div>
 
 	<div class="section2">
@@ -67,36 +89,41 @@
                 <div class="stage">
                     <div class="scene scene-1" id="b1">
                         <div class="content" id="con1">
-                            <div class="info info1" id="in1">
-                            
+                        SOME TEXT 1
+                            <div class="inform info1" id="in1">
+                                ANOTHER TEXT1
                             </div>
                         </div>
                     </div>
 					<div class="scene scene-2" id="b2">
                         <div class="content" id="con2">
-                            <div class="info info2" id="in2">
-                            
+                            SOME TEXT 2
+                            <div class="inform info2" id="in2">
+                                ANOTHER TEXT2
                             </div>  
                         </div>             
                     </div>
 					<div class="scene scene-3" id="b3">
                         <div class="content" id="con3">
-                            <div class="info info3" id="in3">
-                            
+                            SOME TEXT 3
+                            <div class="inform info3" id="in3">
+                                ANOTHER TEXT3
                             </div>
                         </div>
                     </div>
                     <div class="scene scene-4" id="b4">
                         <div class="content" id="con4">
-                            <div class="info info4" id="in4">
-                        
+                            SOME TEXT 4
+                            <div class="inform info4" id="in4">
+                                ANOTHER TEXT4
                             </div>
                         </div>
                     </div> 
 					<div class="scene scene-5" id="b5">
                         <div class="content" id="con5">
-                            <div class="info info5" id="in5">
-                            
+                            SOME TEXT 5
+                            <div class="inform info5" id="in5">
+                                ANOTHER TEXT5
                             </div>  
                         </div>             
                     </div>
@@ -105,11 +132,68 @@
         </div>
     </div>
     
-    
-    <div class="section3"></div>
+    <div class="section3">
+        <div class="trigger_skew"></div>
+        <div class="transition_to_sec3 tran1" id="tr1"></div>
+        <div class="transition_to_sec3 tran2" id="tr2"></div>
+        <div class="our_projects">
+            <div class="projects project1"></div>
+            <div class="projects project2"></div>
+        </div>
+    </div>
 
-    <div class="transition_to_sec3 tr1"></div>
-    <div class="transition_to_sec3 tr2"></div>
+    <div class="section4">
+    <div class="Prices" onclick="RemoveToggled()">
+            <h3>Наши цены</h3>
+            <div class="InlineRight"></div>
+            <div class="PackageNameLeft" id = "ServicePack1" onclick="TogglePack1()">СТОТЫЩБАКСОВ
+                <div class="PackageNameHover PackageNameHoverTop" id="NameHover1">МУЛЬЙОМБАКСОВ</div>
+            </div>
+            <div class="InlineCenter"></div>
+            <div class="PackageNameRight" id = "ServicePack2" onclick="TogglePack2()">СТОТЫЩБАКСОВ
+            <div class="PackageNameHover PackageNameHoverTop" id="NameHover2">МУЛЬЙОМБАКСОВ</div>
+        </div>
+        <div class="InlineLeft"></div>
+        <br>
+        <div class="InlineRight"></div>
+        <div class="PackageNameLeft" id = "ServicePack3" onclick="TogglePack3()">СТОТЫЩБАКСОВ
+            <div class="PackageNameHover PackageNameHoverTop" id="NameHover3">МУЛЬЙОМБАКСОВ</div>
+        </div>
+
+        <div class="InlineCenter"></div>
+
+        <div class="PackageNameRight" id = "ServicePack4" onclick="TogglePack4()">СТОТЫЩБАКСОВ
+            <div class="PackageNameHover PackageNameHoverTop" id="NameHover4">МУЛЬЙОМБАКСОВ</div>
+        </div>
+        <div class="InlineLeft"></div>
+        <br>
+        <div class="InlineRight"></div>
+        <div class="PackageNameLeft" id = "ServicePack5" onclick="TogglePack5()">СТОТЫЩБАКСОВ
+            <div class="PackageNameHover PackageNameHoverBot" id="NameHover5">МУЛЬЙОМБАКСОВ</div>
+        </div>
+        <div class="InlineCenter"></div>
+        <div class="PackageNameRight" id = "ServicePack6" onclick="TogglePack6()">СТОТЫЩБАКСОВ
+            <div class="PackageNameHover PackageNameHoverBot" id="NameHover6">МУЛЬЙОМБАКСОВ</div>
+        </div>
+        <div class="InlineLeft"></div>
+        <br>
+        <div class="InlineRight"></div>
+        <div class="PackageNameLeft" id = "ServicePack7" onclick="TogglePack7()">СТОТЫЩБАКСОВ
+                <div class="PackageNameHover PackageNameHoverBot" id="NameHover7">МУЛЬЙОМБАКСОВ</div>
+        </div>
+        <div class="InlineCenter"></div>
+        <div class="PackageNameRight" id = "ServicePack8" onclick="TogglePack8()">
+            СТОТЫЩБАКСОВ
+            <div class="PackageNameHover PackageNameHoverBot" id="NameHover8">МУЛЬЙОМБАКСОВ</div>
+        </div>
+        <div class="InlineLeft"></div>
+        <br>
+<!--         <div class="test" id="123" onclick="test()">
+            <div class="test2" id="999"></div>
+        </div> -->
+
+    </div>
+    </div>
 
 	<!-- build:js scripts/vender.min.js -->
 	<!-- bower:js -->
@@ -118,11 +202,16 @@
 	<script src="libs/angular/angular.min.js"></script>
     <script src="libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="libs/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="libs/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
 	<!-- endbower -->
+    <script src="js/ScrollToPlugin.js"></script>
+
 	<script src="js/main.js"></script>
+  <script src="js/smooth_scroll.js"></script>
 	<script src="js/scroll_section2.js"></script>
-    <script src="js/change_bcg_section2.js"></script>
-    <script src="js/transition_to_sec3.js"></script>
+  <script src="js/change_bcg_section2.js"></script>
+  <script src="js/transition_to_sec3.js"></script>
+
 
 </body> 
 </html>   

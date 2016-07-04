@@ -1,27 +1,42 @@
 $(document).ready(function (){
 	var he = window.innerHeight;
-	var wi = window.innerWidth; 
+	var wi = window.innerWidth;
+	var transition_to_sec3 = $('.transition_to_sec3');
+	var proj1 = $('.project1');
+	var proj2 = $('.project2');
 
 	setTimeout('$( "h1" ).addClass( "visible" )', 500);
 	setTimeout('$( "p" ).addClass( "visible" )', 0);
 	// $( "#StringAppear" ).addClass( "string" );
-	setTimeout('$( "#StringAppear" ).addClass( "string" );', 2500);
-	setTimeout('$( "#10" ).addClass( "innovateWide" );', 2500);
+	setTimeout('$( "#StringAppear" ).addClass( "string" );', 1600);
+	setTimeout('$( "#10" ).addClass( "innovateWide" );', 1600);
 
-	var bl_wi = Math.sqrt(Math.pow(he/2, 2) + Math.pow(wi/2, 2));
-	$('.transition_to_sec3').css('width', bl_wi);
-	var bl_he = Math.sqrt(Math.pow(he, 2) + Math.pow(wi, 2));
-	$('.transition_to_sec3').css('height', bl_he);
+	transition_to_sec3.css({'width': wi / 2});
+	proj1.css({
+		'width': wi / 4,
+		'height': he / 2,
+		'left': wi / 8
+	});
+	proj2.css({
+		'width': wi / 4,
+		'height': he / 2,
+		'right': wi / 8
+	});
+
 });
 
 function SlideDown(){
-	$('#up').addClass('Display');
 	$('#down').removeClass('Display');
 	$('#down').addClass('noDisplay');
 	$('#up').removeClass('noDisplay');
-	$('nav').addClass('openedNav');
+	$('#up').addClass('Display');
 	$('nav').removeClass('closedNav');
+	$('nav').addClass('openedNav');
+	$('.navPoint').removeClass('noDisp');
+
+
 	setTimeout('$( "#navMenu" ).addClass( "displayMenu" )', 0);
+
 }
 
 function SlideUp(){
@@ -31,6 +46,30 @@ function SlideUp(){
 	$('#up').addClass('noDisplay');
 	$('#down').removeClass('noDisplay');
 	$('#down').addClass('Display');
+	setTimeout("$('.navPoint').addClass('noDisp')", 500);
+
 	$( "#navMenu" ).removeClass( "displayMenu" );
 }
 
+// $(window).scroll(function() {
+// 	var top_scroll = $(document).scrollTop();
+
+// 	if (top_scroll < 2000){
+// 		$('header').removeClass('static');
+// 		$('header').addClass('fixed');
+// 	}
+// 	else {
+// 		$('header').removeClass('fixed');
+// 		$('header').addClass('static');
+// 	};
+// });
+
+// window.onscroll = function() {
+// 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+//   	if (scrolled < 2000){
+// 		$('header').addClass('fixed');
+// 	}
+// 	else {
+// 		$('header').addClass('static');
+// 	};
+// }
